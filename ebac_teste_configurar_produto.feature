@@ -28,13 +28,11 @@
             Esquema do Cenario: Fazer multiplas compras
             Quando selecionado o <tamanho> e a <cor>
             E a <quantidade>
-            Então deve disponibilizar o <botao> de COMPRAR
+            Então deve disponibilizar o <botao> de alerta
 
             Exemplos:
-            | tamanho | cor      | quantidade | botao     |
-            | "M"     | "RED"    | "1"        | "COMPRAR" |
-            | "XS"    | "ORANGE" | "4"        | "COMPRAR" |
-            | "X"     | "BLUE"   | "2"        | "COMPRAR" |
-            | "XL"    | "BLUE"   | "1"        | "COMPRAR" |
-            | "L"     | "RED"    | "5"        | "COMPRAR" |
-            | "S"     | "ORANGE" | "8"        | "COMPRAR" |
+            | tamanho | cor      | quantidade | botao                |
+            | "M"     | "RED"    | "1"        | "COMPRAR"            |
+            | "XS"    | "ORANGE" | "4"        | "COMPRAR"            |
+            | "X"     | "BLUE"   | "2"        | "COMPRAR"            |
+            | "XL"    | "BLUE"   | "13"       | "NAO DISPONIBILIZAR" |

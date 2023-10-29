@@ -24,6 +24,7 @@
             Então deve exibir a <mensagem> de sucesso
 
             Exemplos:
-            | usuario            | senha        | mensagem    |
-            | "ryan@ebac.com.br" | "senha@1234" | "Olá Ryan!" |
-            | "joao@ebac.com.br" | "senha@1234" | "Olá João!" |
+            | usuario            | senha        | mensagem                    |
+            | "ryan@ebac.com.br" | "senha@1234" | "Olá Ryan!"                 |
+            | "joao@ebac.com.br" | "senha@34"   | "Olá João!"                 |
+            | "ryan@ebac.com.br" | "3321234"    | "Usuário ou senha inválido" |

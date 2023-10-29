@@ -10,7 +10,7 @@
 
             Cenario: Cadastro de usuario
             Quando preenchido todos os campos de cadastro com "asteriscos" (obrigatorios)
-            E se por opção o restante dos campos de "cadastro" (não obrigatorios)
+            E se por opção o restante dos campos "sem asteriscos" (não obrigatorios)
             Então liberar o botão de "FINALIZAR COMPRA"
 
             Cenario: Erro de cadastro de Email
@@ -20,15 +20,15 @@
 
             Cenario: Campos de cadastros não preenchidos
             Quando preenchido todos os campos com "asteriscos" (obrigatorios)
-            E ainda a campos de "cadastro" em branco (não obrigatorios)
+            E ainda a campos "sem asteriscos" em branco (não obrigatorios)
             Então deve exibir a mensagem de alerta: "Ainda a campos de cadastro em branco, Deseja continuar assim mesmo?"
 
             Esquema do Cenario: Cadastro de multiplos usuários
             Quando eu preencher todos os campos com <asteriscos> (obrigatorios)
-            E por opção o restante dos campos de <cadastro> (não obrigatorios)
-            Então deve liberar o <botao>
+            E por opção o restante dos campos <sem asteriscos> (não obrigatorios)
+            Então deve liberar o <botao> de alerta
 
             Exemplos:
-            | asteriscos   | cadastro         | boato              |
-            | "preenchido" | "preenchido"     | "FINALIZAR COMPRA" |
-            | "preenchido" | "não preenchido" | "FINALIZAR COMPRA" |
+            | asteriscos   | sem asteriscos   | boato                                                                 |
+            | "preenchido" | "preenchido"     | "FINALIZAR COMPRA"                                                    |
+            | "preenchido" | "não preenchido" | "Ainda a campos de cadastro em branco, Deseja continuar assim mesmo?" |
